@@ -6,6 +6,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+	
 		document.write(Number.MAX_VALUE + "<br>");
 		document.write(Number.MIN_VALUE + "<br>");
 
@@ -48,8 +49,41 @@
 		document.write("data type of " + float_var + " is "
 				+ typeof (float_var) + "<br>")
 		var vehicles = new Array("car", "truck", "van");
+
+		document.write("The first item in the array is  " + vehicles[1]
+				+ "<br>");
+
+		for (i in vehicles) {
+			document.write(vehicles[i] + "<br>");
+		}
+
+		//conditional operator
+		var result = (5 < 10) ? "5 is less than 10" : "5 is greater than 10";
+		document.write(result + "<br>"); //o/p will be 5 is less than 10.
+
+		//switch statement 
+		var number = 10;
+
+		switch (number) {
+		case 1:
+			document.write("one <br>");
+			break;
+		case 2:
+			document.write("two <br>");
+			break;
+		case 10:
+			document.write("ten <br>");
+			break;
+		}
+
+		//o/p will be ten
+
+		function addThese(a, b) {
+			return a + b;
+		}
+
+		document.write("Adding two numbers " + addThese(10, 20) + "<br>");
 		
-		document.write("The first item in the array is  " + vehicles[1]);
 	</script>
 </body>
 </html>
