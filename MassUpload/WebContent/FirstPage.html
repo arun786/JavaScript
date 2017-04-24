@@ -5,12 +5,33 @@
 <title>Insert title here</title>
 </head>
 <body>
-<script type="text/javascript">
-	document.write(Number.MAX_VALUE + "<br>");
-	document.write(Number.MIN_VALUE + "<br>");
-	
-	var escape_characters = "Here are escape characters \' \" \\ \t \n";
-	document.write(escape_characters + "<br>")
-</script>
+	<script type="text/javascript">
+		document.write(Number.MAX_VALUE + "<br>");
+		document.write(Number.MIN_VALUE + "<br>");
+
+		var escape_characters = "Here are escape characters \' \" \\ \t \n";
+		document.write(escape_characters + "<br>")
+
+		var first_string = "Today is ";
+		var second_string = "sunday";
+		var combined = first_string + second_string;
+		document.write(combined + "<br>");
+
+		document.write("Length of the string is " + combined.length + "<br>");
+		document.write("Substring : " + combined.substring(1, 12) + "<br>");
+		
+		document.write("Last Character : " + combined.charAt(combined.length - 1) + "<br>");
+
+		var str_var = "5";
+		var num_var = 10;
+		var sum = str_var + num_var;
+		document.write("sum  = " + sum + "<br>");
+
+		var num1_var = 15;
+		var sum1 = num_var + num1_var;
+		document.write("sum1 =  " + sum1 + "<br>");
+		
+		
+	</script>
 </body>
 </html>
