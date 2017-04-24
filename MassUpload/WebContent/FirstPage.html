@@ -19,19 +19,34 @@
 
 		document.write("Length of the string is " + combined.length + "<br>");
 		document.write("Substring : " + combined.substring(1, 12) + "<br>");
-		
-		document.write("Last Character : " + combined.charAt(combined.length - 1) + "<br>");
+
+		document.write("Last Character : "
+				+ combined.charAt(combined.length - 1) + "<br>");
+		document.write("Index of a : " + combined.indexOf("a") + "<br>");
 
 		var str_var = "5";
 		var num_var = 10;
 		var sum = str_var + num_var;
 		document.write("sum  = " + sum + "<br>");
 
+		var sum1 = Number(str_var) + num_var;
+		document.write("sum =  " + sum1 + "<br>");
+
 		var num1_var = 15;
-		var sum1 = num_var + num1_var;
+		var sum2 = num_var + num1_var;
 		document.write("sum1 =  " + sum1 + "<br>");
-		
-		
+
+		var sum3 = str_var + String(num_var);
+		document.write("sum3 " + sum3 + "<br>");
+
+		var float_var = 3.145678901212;
+		document.write("shortened PI " + float_var + "<br>");
+
+		document.write("Integer conversion of PI " + parseInt(float_var)
+				+ "<br>");
+
+		document.write("data type of " + float_var + " is "
+				+ typeof (float_var) + "<br>")
 	</script>
 </body>
 </html>
