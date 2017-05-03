@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+#h3style {
+	color: gray;
+}
+</style>
+
+<script type="text/javascript" lang="javascript">
+	function alertme() {
+		var alertmsg = " Height : "
+				+ document.getElementById("littleBrain").height + "\nWidth : "
+				+ document.getElementById("littleBrain").width;
+		alert(alertmsg);
+		return true;
+	}
+
+	function changeColor() {
+		document.getElementById("h3style").style.color = "red";
+		document.getElementById("h3style").firstChild.nodeValue = "Excited";
+		return true;
+	}
+
+	function changeAgain() {
+		document.getElementById("h3style").style.color = "gray";
+		document.getElementById("h3style").firstChild.nodeValue = "Bored";
+		return true;
+	}
+
+	function showPara() {
+		document.getElementById("first").style.visibility = (document.formex.firstPara.checked) ? "visible"
+				: "hidden";
+		document.getElementById("second").style.visibility = (document.formex.secondPara.checked) ? "visible"
+				: "hidden";
+		document.getElementById("third").style.visibility = (document.formex.thirdPara.checked) ? "visible"
+				: "hidden";
+		return true;
+	}
+</script>
+
+</head>
+<body>
+	<img src="images/brain.jpeg" id="littleBrain" onClick="alertme();" />
+	<h3 id="h3style" onmouseover="changeColor();"
+		onmouseout="changeAgain();">Roll Over</h3>
+
+	<p id="first">This is First Paragraph</p>
+	<p id="second">This is second Paragraph</p>
+	<p id="third">This is third Paragraph</p>
+
+	<form name="formex">
+		<input type="checkbox" name="firstPara" onclick="showPara();" />First Paragraph<br> 
+		<input type="checkbox" name="secondPara" onclick="showPara();" />Second Paragraph<br> 
+		<input type="checkbox" name="thirdPara" onclick="showPara();" />Third Paragraph<br>
+	</form>
+
+</body>
+</html>
