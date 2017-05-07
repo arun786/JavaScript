@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function onTheLight() {
+		document.getElementById("bulbs").src = 'images/bulb_on.jpeg';
+	}
+	
+	function offTheLight(){
+		document.getElementById("bulbs").src = 'images/bulb.jpeg';
+	}
+</script>
+</head>
+<body>
+	<img id="bulbs" src="images/bulb.jpeg" style="width:100px"/>
+	<button type="button" onclick="onTheLight()">Click to on the
+		light</button>
+	<button type="button" onclick="offTheLight()">Click to off the
+		light</button>
+</body>
+</html>

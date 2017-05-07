@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	function addToPara() {
+		document.getElementById("demo").innerHTML = "This is used to add Data to Paragraph";
+	}
+
+	function removeFromPara() {
+		document.getElementById("demo").style.display = 'none';
+	}
+</script>
+</head>
+<body>
+
+	<p id="demo"></p>
+
+	<button type="button" onclick="addToPara()">Click to add value
+		to Para</button>
+
+	<button type="button" onclick="removeFromPara()">Click to
+		remove Data from Para..</button>
+</body>
+</html>
