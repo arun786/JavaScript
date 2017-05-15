@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function myCar() {
+		var car = 'fiat';
+		document.getElementById("demo").innerHTML = car;
+	}
+
+	function myCarObject() {
+		var car = {
+			type : 'fiat',
+			model : '500',
+			color : 'grey'
+		};
+		
+		document.getElementById('type').innerHTML = car.type;
+		document.getElementById('model').innerHTML = car.model;
+		document.getElementById('color').innerHTML = car.color;
+	}
+</script>
+</head>
+<body>
+	<p id="demo"></p>
+	<button onclick="myCar()">click</button>
+	
+	<p id='type'></p>
+	<p id='model'></p>
+	<p id='color'></p>
+	
+	<button onclick="myCarObject()">Click for Object</button>
+	
+</body>
+</html>
