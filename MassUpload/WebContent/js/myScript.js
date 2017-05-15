@@ -31,3 +31,8 @@ function sumReturn(x, y) {
 function displayinHTML(x, y) {
 	document.getElementById('demo').innerHTML = sumReturn(x, y);
 }
+
+function toFarenheit() {
+	var fahrenheit = document.getElementById('fahrenheit').innerHTML;
+	document.getElementById('celcius').innerHTML = (5 / 9) * (fahrenheit - 32) + " celcius";
+}
